@@ -1,0 +1,131 @@
+2025-08-15 16:17:27,699 - INFO - Creating Vendor Summary Table...
+2025-08-15 16:27:19,786 - INFO - Creating Vendor Summary Table...
+2025-08-15 18:45:52,915 - INFO - Creating Vendor Summary Table...
+2025-08-15 18:51:15,474 - INFO -                     VendorName  VendorNumber  Brand Volume  ActualPrice  \
+0  ALTAMAR BRANDS LLC                    105   8419    100         6.99   
+1  BACARDI USA INC                       480   8368    100         1.99   
+2  BROWN-FORMAN CORP                    1128   1295    100         3.99   
+3  BROWN-FORMAN CORP                    1128   1550    100         3.99   
+4  DIAGEO NORTH AMERICA INC             3960   4736    100         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost  
+0  3.743400e+02  
+1  4.104490e+08  
+2  4.105125e+08  
+3  8.787875e+07  
+4  1.535510e+09  
+2025-08-15 18:51:15,495 - INFO - Cleaning data begins...
+2025-08-15 18:51:15,496 - INFO -                  VendorName  VendorNumber  Brand  Volume  ActualPrice  \
+0        ALTAMAR BRANDS LLC           105   8419   100.0         6.99   
+1           BACARDI USA INC           480   8368   100.0         1.99   
+2         BROWN-FORMAN CORP          1128   1295   100.0         3.99   
+3         BROWN-FORMAN CORP          1128   1550   100.0         3.99   
+4  DIAGEO NORTH AMERICA INC          3960   4736   100.0         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost   GrossProfit  ProfitMargin  StockTurnover  \
+0  3.743400e+02 -6.855960e+04 -7.023720e+06       0.120482   
+1  4.104490e+08 -8.101764e+10 -8.101927e+12       0.000125   
+2  4.105125e+08 -8.095579e+10 -8.096013e+12       0.000180   
+3  8.787875e+07 -1.733063e+10 -1.733120e+12       0.000111   
+4  1.535510e+09 -3.044310e+11 -3.044338e+13       0.000029   
+
+   SalesToPurchaseRatio  
+0              0.023885  
+1              0.000020  
+2              0.000054  
+3              0.000033  
+4              0.000009  
+2025-08-15 18:51:15,505 - INFO - Ingesting data...
+2025-08-15 18:55:04,085 - INFO - Creating Vendor Summary Table...
+2025-08-15 19:01:40,054 - INFO -                     VendorName  VendorNumber  Brand Volume  ActualPrice  \
+0  ALTAMAR BRANDS LLC                    105   8419    100         6.99   
+1  BACARDI USA INC                       480   8368    100         1.99   
+2  BROWN-FORMAN CORP                    1128   1295    100         3.99   
+3  BROWN-FORMAN CORP                    1128   1550    100         3.99   
+4  DIAGEO NORTH AMERICA INC             3960   4736    100         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost  
+0  3.743400e+02  
+1  4.104490e+08  
+2  4.105125e+08  
+3  8.787875e+07  
+4  1.535510e+09  
+2025-08-15 19:01:40,064 - INFO - Cleaning data begins...
+2025-08-15 19:01:40,074 - INFO -                  VendorName  VendorNumber  Brand  Volume  ActualPrice  \
+0        ALTAMAR BRANDS LLC           105   8419   100.0         6.99   
+1           BACARDI USA INC           480   8368   100.0         1.99   
+2         BROWN-FORMAN CORP          1128   1295   100.0         3.99   
+3         BROWN-FORMAN CORP          1128   1550   100.0         3.99   
+4  DIAGEO NORTH AMERICA INC          3960   4736   100.0         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost   GrossProfit  ProfitMargin  StockTurnover  \
+0  3.743400e+02 -6.855960e+04 -7.023720e+06       0.120482   
+1  4.104490e+08 -8.101764e+10 -8.101927e+12       0.000125   
+2  4.105125e+08 -8.095579e+10 -8.096013e+12       0.000180   
+3  8.787875e+07 -1.733063e+10 -1.733120e+12       0.000111   
+4  1.535510e+09 -3.044310e+11 -3.044338e+13       0.000029   
+
+   SalesToPurchaseRatio  
+0              0.023885  
+1              0.000020  
+2              0.000054  
+3              0.000033  
+4              0.000009  
+2025-08-15 19:01:40,090 - INFO - Ingesting data...
+2025-08-15 19:07:58,649 - INFO - Creating Vendor Summary Table...
