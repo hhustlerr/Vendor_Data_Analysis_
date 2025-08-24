@@ -1,0 +1,358 @@
+2025-08-13 12:16:16,792 - INFO - Ingesting begin_inventory.csv into DB
+2025-08-13 12:16:25,171 - INFO - Ingesting end_inventory.csv into DB
+2025-08-13 12:16:38,567 - INFO - Ingesting purchases.csv into DB
+2025-08-13 12:19:11,170 - INFO - Ingesting purchase_prices.csv into DB
+2025-08-13 12:19:26,971 - INFO - Ingesting sales.csv into DB
+2025-08-15 19:14:50,093 - INFO - Creating Vendor Summary Table...
+2025-08-15 19:17:42,162 - INFO -                     VendorName  VendorNumber  Brand Volume  ActualPrice  \
+0  ALTAMAR BRANDS LLC                    105   8419    100         6.99   
+1  BACARDI USA INC                       480   8368    100         1.99   
+2  BROWN-FORMAN CORP                    1128   1295    100         3.99   
+3  BROWN-FORMAN CORP                    1128   1550    100         3.99   
+4  DIAGEO NORTH AMERICA INC             3960   4736    100         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost  
+0  3.743400e+02  
+1  4.104490e+08  
+2  4.105125e+08  
+3  8.787875e+07  
+4  1.535510e+09  
+2025-08-15 19:17:42,190 - INFO - Cleaning data begins...
+2025-08-15 19:17:42,196 - INFO -                  VendorName  VendorNumber  Brand  Volume  ActualPrice  \
+0        ALTAMAR BRANDS LLC           105   8419   100.0         6.99   
+1           BACARDI USA INC           480   8368   100.0         1.99   
+2         BROWN-FORMAN CORP          1128   1295   100.0         3.99   
+3         BROWN-FORMAN CORP          1128   1550   100.0         3.99   
+4  DIAGEO NORTH AMERICA INC          3960   4736   100.0         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost   GrossProfit  ProfitMargin  StockTurnover  \
+0  3.743400e+02 -6.855960e+04 -7.023720e+06       0.120482   
+1  4.104490e+08 -8.101764e+10 -8.101927e+12       0.000125   
+2  4.105125e+08 -8.095579e+10 -8.096013e+12       0.000180   
+3  8.787875e+07 -1.733063e+10 -1.733120e+12       0.000111   
+4  1.535510e+09 -3.044310e+11 -3.044338e+13       0.000029   
+
+   SalesToPurchaseRatio  
+0              0.023885  
+1              0.000020  
+2              0.000054  
+3              0.000033  
+4              0.000009  
+2025-08-15 19:17:42,200 - INFO - Ingesting data...
+2025-08-15 19:22:27,596 - INFO - Creating Vendor Summary Table...
+2025-08-15 19:25:03,486 - INFO -                     VendorName  VendorNumber  Brand Volume  ActualPrice  \
+0  ALTAMAR BRANDS LLC                    105   8419    100         6.99   
+1  BACARDI USA INC                       480   8368    100         1.99   
+2  BROWN-FORMAN CORP                    1128   1295    100         3.99   
+3  BROWN-FORMAN CORP                    1128   1550    100         3.99   
+4  DIAGEO NORTH AMERICA INC             3960   4736    100         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost  
+0  3.743400e+02  
+1  4.104490e+08  
+2  4.105125e+08  
+3  8.787875e+07  
+4  1.535510e+09  
+2025-08-15 19:25:03,486 - INFO - Cleaning data begins...
+2025-08-15 19:25:03,501 - INFO -                  VendorName  VendorNumber  Brand  Volume  ActualPrice  \
+0        ALTAMAR BRANDS LLC           105   8419   100.0         6.99   
+1           BACARDI USA INC           480   8368   100.0         1.99   
+2         BROWN-FORMAN CORP          1128   1295   100.0         3.99   
+3         BROWN-FORMAN CORP          1128   1550   100.0         3.99   
+4  DIAGEO NORTH AMERICA INC          3960   4736   100.0         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost   GrossProfit  ProfitMargin  StockTurnover  \
+0  3.743400e+02 -6.855960e+04 -4.086767e+03       0.120482   
+1  4.104490e+08 -8.101764e+10 -4.960629e+06       0.000125   
+2  4.105125e+08 -8.095579e+10 -1.868148e+06       0.000180   
+3  8.787875e+07 -1.733063e+10 -3.025787e+06       0.000111   
+4  1.535510e+09 -3.044310e+11 -1.080808e+07       0.000029   
+
+   SalesToPurchaseRatio  
+0              0.023885  
+1              0.000020  
+2              0.000054  
+3              0.000033  
+4              0.000009  
+2025-08-15 19:25:03,501 - INFO - Ingesting data...
+2025-08-15 19:25:04,435 - INFO - Completed
+2025-08-15 19:26:42,219 - INFO - Creating Vendor Summary Table...
+2025-08-15 19:29:23,730 - INFO -                     VendorName  VendorNumber  Brand Volume  ActualPrice  \
+0  ALTAMAR BRANDS LLC                    105   8419    100         6.99   
+1  BACARDI USA INC                       480   8368    100         1.99   
+2  BROWN-FORMAN CORP                    1128   1295    100         3.99   
+3  BROWN-FORMAN CORP                    1128   1550    100         3.99   
+4  DIAGEO NORTH AMERICA INC             3960   4736    100         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost  
+0  3.743400e+02  
+1  4.104490e+08  
+2  4.105125e+08  
+3  8.787875e+07  
+4  1.535510e+09  
+2025-08-15 19:29:23,733 - INFO - Cleaning data begins...
+2025-08-15 19:29:23,739 - INFO -                  VendorName  VendorNumber  Brand  Volume  ActualPrice  \
+0        ALTAMAR BRANDS LLC           105   8419   100.0         6.99   
+1           BACARDI USA INC           480   8368   100.0         1.99   
+2         BROWN-FORMAN CORP          1128   1295   100.0         3.99   
+3         BROWN-FORMAN CORP          1128   1550   100.0         3.99   
+4  DIAGEO NORTH AMERICA INC          3960   4736   100.0         2.99   
+
+   PurchasePrice  TotalPurchaseQuantity  TotalPuhchaseDollars  \
+0           5.30           1.992000e+03          7.023720e+04   
+1           1.51           6.560264e+09          8.101927e+10   
+2           2.89           6.020634e+09          8.096013e+10   
+3           2.91           1.288842e+09          1.733120e+10   
+4           2.14           3.261677e+10          3.044338e+11   
+
+   TotalSalesDollar  TotalSalesPrice  TotalSalesQuantity  TotalExciseTax  \
+0      1.677600e+03     1.677600e+03               240.0           24.00   
+1      1.633213e+06     5.031416e+05            820710.0        85961.15   
+2      4.333479e+06     1.313189e+06           1086085.0       113751.00   
+3      5.727645e+05     2.811155e+05            143550.0        14923.70   
+4      2.816700e+06     9.824243e+05            942040.0        98544.60   
+
+    FreightCost   GrossProfit  ProfitMargin  StockTurnover  \
+0  3.743400e+02 -6.855960e+04 -4.086767e+03       0.120482   
+1  4.104490e+08 -8.101764e+10 -4.960629e+06       0.000125   
+2  4.105125e+08 -8.095579e+10 -1.868148e+06       0.000180   
+3  8.787875e+07 -1.733063e+10 -3.025787e+06       0.000111   
+4  1.535510e+09 -3.044310e+11 -1.080808e+07       0.000029   
+
+   SalesToPurchaseRatio  
+0              0.023885  
+1              0.000020  
+2              0.000054  
+3              0.000033  
+4              0.000009  
+2025-08-15 19:29:23,743 - INFO - Ingesting data...
+2025-08-15 19:29:24,730 - INFO - Completed
+2025-08-17 18:58:11,823 - INFO - Creating Vendor Summary Table...
+2025-08-17 18:58:20,035 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750               145080.0   
+1          23.19        28.99   1750               164038.0   
+2          18.24        24.99   1750               187407.0   
+3          16.17        22.99   1750               201682.0   
+4          21.89        29.99   1750               138109.0   
+
+   TotalPuhchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalExciseTax  freightCost  
+0       260999.20     68601.68  
+1       294438.66    144929.24  
+2       343854.07    123780.22  
+3       368242.80    257032.07  
+4       249587.83    257032.07  
+2025-08-17 18:58:20,041 - INFO - Cleaning data begins...
+2025-08-17 18:59:00,295 - INFO - Creating Vendor Summary Table...
+2025-08-17 18:59:08,258 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750               145080.0   
+1          23.19        28.99   1750               164038.0   
+2          18.24        24.99   1750               187407.0   
+3          16.17        22.99   1750               201682.0   
+4          21.89        29.99   1750               138109.0   
+
+   TotalPuhchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalExciseTax  freightCost  
+0       260999.20     68601.68  
+1       294438.66    144929.24  
+2       343854.07    123780.22  
+3       368242.80    257032.07  
+4       249587.83    257032.07  
+2025-08-17 18:59:08,266 - INFO - Cleaning data begins...
+2025-08-17 18:59:08,274 - INFO -    VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          26.27        36.99  1750.0               145080.0   
+1          23.19        28.99  1750.0               164038.0   
+2          18.24        24.99  1750.0               187407.0   
+3          16.17        22.99  1750.0               201682.0   
+4          21.89        29.99  1750.0               138109.0   
+
+   TotalPuhchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalExciseTax  freightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0       260999.20     68601.68   1290667.91     25.297693       0.979108   
+1       294438.66    144929.24   1015032.27     21.062810       0.976890   
+2       343854.07    123780.22   1119816.92     24.675786       0.998575   
+3       368242.80    257032.07   1214774.94     27.139908       0.993703   
+4       249587.83    257032.07   1199901.61     28.412764       0.983556   
+
+   SalesToPurchaseRatio  
+0              1.338647  
+1              1.266830  
+2              1.327594  
+3              1.372493  
+4              1.396897  
+2025-08-17 18:59:08,282 - INFO - Ingesting data...
+2025-08-17 18:59:10,341 - INFO - Completed
+2025-08-17 19:23:51,781 - INFO - Creating Vendor Summary Table...
+2025-08-17 19:24:02,329 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750               145080.0   
+1          23.19        28.99   1750               164038.0   
+2          18.24        24.99   1750               187407.0   
+3          16.17        22.99   1750               201682.0   
+4          21.89        29.99   1750               138109.0   
+
+   TotalPuhchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalExciseTax  freightCost  
+0       260999.20     68601.68  
+1       294438.66    144929.24  
+2       343854.07    123780.22  
+3       368242.80    257032.07  
+4       249587.83    257032.07  
+2025-08-17 19:24:02,338 - INFO - Cleaning data begins...
+2025-08-17 19:24:02,355 - INFO -    VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          26.27        36.99  1750.0               145080.0   
+1          23.19        28.99  1750.0               164038.0   
+2          18.24        24.99  1750.0               187407.0   
+3          16.17        22.99  1750.0               201682.0   
+4          21.89        29.99  1750.0               138109.0   
+
+   TotalPuhchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalExciseTax  freightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0       260999.20     68601.68   1290667.91     25.297693       0.979108   
+1       294438.66    144929.24   1015032.27     21.062810       0.976890   
+2       343854.07    123780.22   1119816.92     24.675786       0.998575   
+3       368242.80    257032.07   1214774.94     27.139908       0.993703   
+4       249587.83    257032.07   1199901.61     28.412764       0.983556   
+
+   SalesToPurchaseRatio  
+0              1.338647  
+1              1.266830  
+2              1.327594  
+3              1.372493  
+4              1.396897  
+2025-08-17 19:24:02,371 - INFO - Ingesting data...
+2025-08-17 19:24:04,793 - INFO - Completed
